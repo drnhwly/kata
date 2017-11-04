@@ -4,7 +4,7 @@ public class ASum {
 		long volume = 0;
 		int n = 1; 
 		while (m > volume) {
-			long nVolume = n*n*n;
+			long nVolume = (long) Math.pow(n, 3);
 			volume += nVolume; 
 			if (volume == m) return n;
 			else n++;
